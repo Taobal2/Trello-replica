@@ -42,11 +42,12 @@ margin-left:100px;
 @media screen and (max-width:400px){
     width:90%;
     height:100%;
-    margin:auto;
     text-align:center;
     display:flex;
     flex-direction:column;
     align-items:center;
+    background-color:red;
+    margin-left:0px;
     
     
 }
@@ -138,7 +139,9 @@ padding-top:70px;
 width:100%;
 height:100%;
 display:flex;
+flex-direction:column;
 justify-content:center;
+align-items:center;
 `;
 const Wrapper = styled.div`
 width:100%;
@@ -153,5 +156,6 @@ height:100%;
 display:flex;
 flex-direction:column-reverse;
 align-items:center;
+justify-content:center;
 }
 `;
