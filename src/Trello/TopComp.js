@@ -103,6 +103,7 @@ outline:none;
 
 @media screen and (max-width:400px){
     display:none;
+    margin-right:0;
 }
 `;
 const SignUp = styled.div`
