@@ -11,7 +11,7 @@ export const TopComp = () => {
                 <Desc>Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office, the way your team works is unique—accomplish it all with Trello.</Desc>
                 <Button>
                     <Input placeholder="Email"/>
-                    <SignUp>Sign up-its free!</SignUp>
+                    <SignUp>Sign up-its free !</SignUp>
                 </Button>
             </Content>
             <Image src={img}/>
@@ -22,14 +22,34 @@ export const TopComp = () => {
 
 
 const Image = styled.img`
-width:420px;
+width:450px;
 height:550px;
-object-fit:cover;
+object-fit:contain;
 margin-right:30px;
+margin-top:30px;
+
+@media screen and (max-width:500px){
+
+width:80%;
+height:50%;
+margin-bottom:20px;
+}
 `;
 const Content = styled.div`
 width:688px; 
 margin-left:100px;
+
+@media screen and (max-width:400px){
+    width:90%;
+    height:100%;
+    margin:auto;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+    
+}
 
 `;
 const Title = styled.div`
@@ -38,14 +58,33 @@ color:#091e42;
 font-family:Charlie Display, sans-serif;
 margin-bottom:12px;
 font-weight:550;
+
+@media screen and (max-width:400px){
+    font-size:29px;
+}
 `;
 const Desc = styled.div`
 font-size:20px;
 color:#091e42;
 margin-bottom:40px;
+
+@media screen and (max-width:400px){
+    font-size:24px;
+
+}
 `;
 const Button = styled.div`
+width:650px;
 display:flex;
+
+@media screen and (max-width:500px){
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+}
 `;
 const Input = styled.input`
 margin-right:15px;
@@ -59,7 +98,10 @@ outline:none;
 ::placeholder {
     font-size:20px;
     padding-left:12px;
-    
+}
+
+@media screen and (max-width:400px){
+    display:none;
 }
 `;
 const SignUp = styled.div`
@@ -77,7 +119,12 @@ transition:all 400ms;
 :hover{
     cursor:pointer;
     background-color:#0051CC;
+}
 
+@media screen and (max-width:500px){
+    width:100%;
+    height:50px;
+    font-size:25px;
 }
 `;
 const Container = styled.div`
@@ -86,11 +133,25 @@ min-height:100vh;
 height:100%;
 background-color:#ECE8FF;
 padding-top:70px;
+
+@media screen and (max-width:500px){
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
 `;
 const Wrapper = styled.div`
 width:100%;
-height:100vh;
+height:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+
+@media screen and (max-width:500px){
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column-reverse;
+align-items:center;
+}
 `;

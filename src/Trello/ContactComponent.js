@@ -19,14 +19,14 @@ export const ContactComponent = () => {
                     </Content>
                 </Box>
                <NoteWrapper>
-               <Note>
                     <Pusher>
                     <Sub>Trello also works great on your smaller screen.
                     </Sub>
-                    <Image src={img1}/>
-                    <Image src={img2}/>
+                    <ImageWrapper>
+                       <Image src={img1}/>
+                       <Image src={img2}/>
+                    </ImageWrapper>
                     </Pusher>
-                </Note>
                </NoteWrapper>
             </Wrapper>
         </Container>
@@ -34,21 +34,44 @@ export const ContactComponent = () => {
 }
 
  
+const ImageWrapper=styled.div`
+margin:20px 0;
+
+@media screen and (max-width:500px) {
+    width:100%;
+    display:flex;
+}
+`;
 const Pusher=styled.div`
 width:100%;
 display:flex;
-justify-content:flex-end;
+flex-direction:column;
 align-items:center;
+
+@media screen and (max-width:500px) {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
 `;
 const NoteWrapper=styled.div`
 width:100%;
-height:80px;
+height:130px;
 background-color:#f4f4f4;
 display:flex;
 align-items:center;
 justify-content:center;
 
+@media screen and (max-width:500px) {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 
+}
 
 `;
 const Image=styled.img`
@@ -59,28 +82,52 @@ margin:0 5px;
 :hover {
     cursor:pointer;
 }
+
+@media screen and (max-width:500px) {
+    width:90%;
+    width:150px;
+
+}
 `;
-const Note=styled.div`
-width:82%;
-height:60px;
-display:flex;
-align-items:center;
-`;
+
 const Sub=styled.div`
 font-size:20px;
 margin-right:25px;
+
+@media screen and (max-width:500px) {
+    width:80%;
+    display:flex;
+    text-align:center;
+    font-size:18px;
+    margin-top:20px;
+}
 `;
 const Content=styled.div`
-width:800px;
+width:100%;
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
 text-align:center;
 
+@media screen and (max-width:500px) {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 `;
 const Register=styled.div`
 display:flex;
+
+@media screen and (max-width:500px) {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
 `;
 const Box=styled.div`
 width:82%;
@@ -93,12 +140,26 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 margin-bottom:40px;
+
+
+@media screen and (max-width:500px) {
+    width:100%;
+    height:400px;
+  
+    
+}
 `;
 const Text=styled.div`
 font-size:24px;
 font-weight:500;
 line-height:32px;
 margin-bottom:50px;
+
+@media screen and (max-width:500px) {
+    width:80%;
+    font-size:26px;
+    line-height:50px;
+}
 `;
 const Input=styled.input`
 border:0;
@@ -111,6 +172,11 @@ border-radius:5px;
 ::placeholder{
     font-size:20px;
     padding-left:10px;
+}
+
+@media screen and (max-width:500px) {
+    display:none;
+
 }
 `;
 const Button=styled.button`
@@ -130,6 +196,18 @@ margin-left:10px;
     background-color:#0098B3;
 }
 
+@media screen and (max-width:500px) {
+    width:85%;
+    height:60px;
+    font-size:30px;
+    background-color:#00aa55;
+
+    :hover{
+    background-color:#008241;
+
+    }
+
+}
 `;
 const Container=styled.div`
 width:100%;
@@ -137,6 +215,13 @@ min-height:70vh;
 height:100%;
 background-color:#FAFBFC;
 padding-top:50px;
+
+@media screen and (max-width:500px) {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+}
 `;
 const Wrapper=styled.div`
 width:100%;
@@ -144,4 +229,9 @@ display:flex;
 justify-content:center;
 flex-direction:column;
 align-items:center;
+
+@media screen and (max-width:500px) {
+    width:90%;
+    height:100%;
+}
 `;

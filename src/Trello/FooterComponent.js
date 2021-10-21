@@ -8,7 +8,7 @@ export const FooterComponent = () => {
     return (
         <Container>
             <Wrapper>
-                <DropDown>
+                <DropDown>English
                     <RiArrowDropDownLine/>
                 </DropDown>
                 <Navigation>
@@ -42,6 +42,14 @@ font-size:16px;
 `;
 const Navigation=styled.div`
 display:flex;
+
+@media screen and (max-width: 500px){
+    width:90%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
 `;
 const Nav=styled.div`
 font-size:16px;
@@ -56,6 +64,12 @@ text-decoration:underline;
     color:#0d1013;
     cursor:pointer;
 }
+
+@media screen and (max-width: 500px){
+    // width:100%;
+    margin:6px;
+    // height:100%;
+}
 `;
 const DropDown=styled.button`
 width:200px; 
@@ -64,15 +78,24 @@ border:0;
 outline:none;
 border: 0.2px solid grey;
 margin-bottom:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
 
 `;
 const Container=styled.div`
 width:100%;
-min-height:50vh;
+min-height:40vh;
 height:100%;
 padding-top: 60px;
 background-color:#FAFBFC;
 
+
+@media screen and (max-width: 500px){
+    width:100%;
+    height:100%;
+}
 `;
 const Wrapper=styled.div`
 width:100%;
@@ -80,5 +103,17 @@ display:flex;
 justify-content:center;
 flex-direction:column;
 align-items:center;
+
+
+
+@media screen and (max-width: 500px){
+    width:90%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
 `;
 

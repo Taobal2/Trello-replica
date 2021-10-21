@@ -32,4 +32,6 @@ export const SliderComponent = () => {
 
 const Container = styled.div`
 `;
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+
+`;
