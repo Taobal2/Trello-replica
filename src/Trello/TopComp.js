@@ -33,7 +33,6 @@ const Image = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
 
   @media screen and (max-width: 600px) {
     width: 250px;

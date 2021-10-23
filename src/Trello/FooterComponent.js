@@ -45,6 +45,7 @@ const Copyright = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-bottom: 15px;
 
   @media screen and (max-width: 600px) {
     width: 90%;

@@ -47,7 +47,6 @@ const Last = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: pink;
 
   @media screen and (max-width: 600px) {
     width: 90%;
