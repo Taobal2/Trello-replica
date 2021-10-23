@@ -32,7 +32,7 @@ const Trello = () => {
       <ThirdComponent />
       <FourthBuild />
       <FifthComponent />
-      {/* <SliderComponent /> */}
+      <SliderComponent />
       <ContactComponent />
       <FooterComponent />
     </div>
