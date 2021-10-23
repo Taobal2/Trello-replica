@@ -30,7 +30,6 @@ const Finance = styled.div`
   width: 200px;
   margin-right: 100px;
   margin-left: 20px;
-
   font-size: 19px;
 
   @media screen and (max-width: 600px) {
@@ -39,6 +38,7 @@ const Finance = styled.div`
     height: 100%;
     color: black;
     font-weight: 500;
+    margin-right: 0px;
   }
 `;
 const Last = styled.div`
@@ -50,11 +50,12 @@ const Last = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 90%;
+    margin-top: 20px;
   }
 `;
 const Div = styled.div`
   font-size: 40px;
-  margin-top: $0px;
+  margin-top: 0px;
 `;
 const Note = styled.div`
   font-size: 32px;
@@ -98,7 +99,8 @@ const LogoSection = styled.div`
 
   @media screen and (max-width: 600px) {
     display: flex;
-    flex-direction: column-reverse;
+    height: 60%;
+    flex-direction: column;
     margin-left: 10px;
   }
 `;
@@ -110,7 +112,6 @@ const Logo = styled.img`
   @media screen and (max-width: 600px) {
     width: 50%;
     height: 100%;
-    margin: 15px 0;
   }
 `;
 const Title = styled.div`
@@ -118,8 +119,7 @@ const Title = styled.div`
   margin-top: 60px;
 
   @media screen and (max-width: 600px) {
-    height: 100%;
-    margin: 0;
+    margin-top: 20px;
   }
 `;
 const Desc = styled.div`
@@ -127,8 +127,6 @@ const Desc = styled.div`
   font-weight: 500;
 
   @media screen and (max-width: 600px) {
-    width: 50%;
-    height: 100%;
     margin-top: 5px;
   }
 `;
@@ -139,11 +137,13 @@ const Container = styled.div`
   background-color: #c1f8ff;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media screen and (max-width: 600px) {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 
@@ -152,6 +152,7 @@ const Wrapper = styled.div`
   display: flex;
   height: 100%;
 
+  
   @media screen and (max-width: 600px) {
     width: 90%
     height: 100%;

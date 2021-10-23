@@ -28,7 +28,7 @@ const Image = styled.img`
   width: 450px;
   height: 550px;
   object-fit: contain;
-  margin-right: 30px;
+  margin-right: 60px;
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -38,6 +38,7 @@ const Image = styled.img`
     width: 250px;
     height: 300px;
     margin-bottom: 20px;
+    margin-right: 0px;
     object-fit: contain;
   }
 `;

@@ -174,5 +174,5 @@ const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
+  padding: 40px 0;
 `;
