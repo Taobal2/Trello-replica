@@ -1,12 +1,12 @@
-import React from 'react'
-import Trello from './Trello/Trello'
+import React from "react";
+import Home from "./component/home/home.component";
 
 const App = () => {
   return (
     <div>
-      <Trello />
+      <Home />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

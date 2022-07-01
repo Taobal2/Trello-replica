@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "./Assets/tag.svg";
-import img2 from "./Assets/compass.svg";
+import img1 from "../Assets/tag.svg";
+import img2 from "../Assets/compass.svg";
 
 export const FifthComponent = () => {
   return (

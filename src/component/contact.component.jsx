@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "./Assets/apple.svg";
-import img2 from "./Assets/google..svg";
+import img1 from "../Assets/apple.svg";
+import img2 from "../Assets/google..svg";
 
 export const ContactComponent = () => {
   return (

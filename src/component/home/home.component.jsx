@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import { Header } from "./Header";
-import { TopComp } from "./TopComp";
-import { SecondComponent } from "./SecondComponent";
-import { ThirdComponent } from "./ThirdComponent";
-import { FourthBuild } from "./FourthComponent/FourthBuild";
-import { FifthComponent } from "./FifthComponent";
-import { SliderComponent } from "./Slider/SliderComponent";
-import { ContactComponent } from "./ContactComponent";
-import { FooterComponent } from "./FooterComponent";
+import { Header } from "../navigation/navigation.component";
+import { TopComp } from "../top.component";
+import { SecondComponent } from "../second.component";
+import { ThirdComponent } from "../third.component";
+import { FourthBuild } from "../FourthComponent/fourthBuild.component";
+import { FifthComponent } from "../fifth.component";
+import { SliderComponent } from "../slider/slider.component.jsx";
+import { ContactComponent } from "../contact.component";
+import { FooterComponent } from "../footer.component";
 
-const Trello = () => {
+const Home = () => {
   const [toggle, setToggle] = useState(false);
 
   const onHandle = () => {
     const check = window.scrollY;
-    console.log(check);
     if (check >= 70) {
       setToggle(true);
     } else {
@@ -39,4 +38,4 @@ const Trello = () => {
   );
 };
 
-export default Trello;
+export default Home;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import img from "./Assets/atlassian.svg";
+import img from "../Assets/atlassian.svg";
 
 export const FooterComponent = () => {
   return (

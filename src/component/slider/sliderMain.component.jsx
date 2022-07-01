@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img1 from "../Assets/ebaylogo.png";
+import img1 from "../../Assets/ebaylogo.png";
 import { ImQuotesLeft } from "react-icons/im";
 
 export const SliderMain = ({ header, sub, text, note }) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "./Assets/trelloTop.png";
+import img from "../Assets/trelloTop.png";
 
 export const TopComp = () => {
   return (

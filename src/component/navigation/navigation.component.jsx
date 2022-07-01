@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "./Assets/Trello.jpg";
+import logo from "../../Assets/Trello.jpg";
 
 export const Header = ({ bg }) => {
   return (

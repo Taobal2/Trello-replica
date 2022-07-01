@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import img from "./Assets/board.png";
-import img1 from "./Assets/costo.png";
-import img2 from "./Assets/google.png";
-import img3 from "./Assets/fender.png";
-import img4 from "./Assets/space.jpg";
+import img from "../Assets/board.png";
+import img1 from "../Assets/costo.png";
+import img2 from "../Assets/google.png";
+import img3 from "../Assets/fender.png";
+import img4 from "../Assets/space.jpg";
 
 export const SecondComponent = () => {
   return (
